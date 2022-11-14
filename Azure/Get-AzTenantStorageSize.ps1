@@ -107,7 +107,7 @@ foreach ($subscription in $subscriptions) {
             [void]$StorageAccountDetails.Rows.Add($subscription.Name, $resourceGroup.ResourceGroupName, $storageAccount.StorageAccountName, $Subscription.Id, $ResourceGroup.Id, $StorageAccount.Id, $sizeInBytes, $sizeInBytes/1TB)
         
             Start-Sleep -seconds 1 # This seems necessary to avoid API timeouts
-#        }
+        }
     }
 }
 
